@@ -1,7 +1,7 @@
 +++ 
 draft = true
 date = 2023-09-17T15:00:56-04:00
-title = ""
+title = "First Post"
 description = ""
 slug = ""
 authors = []
