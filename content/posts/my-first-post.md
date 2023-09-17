@@ -1,10 +1,10 @@
 +++ 
-draft = true
+draft = false
 date = 2023-09-17T15:00:56-04:00
 title = "First Post"
 description = ""
 slug = ""
-authors = []
+authors = ["Test]
 tags = []
 categories = []
 externalLink = ""
