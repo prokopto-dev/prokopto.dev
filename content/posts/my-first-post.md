@@ -6,7 +6,7 @@ description = ""
 slug = ""
 authors = ["Courtney Caldwell"]
 tags = ["Personal","Minimalism"]
-categories = []
+categories = ["Blog"]
 externalLink = ""
 series = []
 +++
