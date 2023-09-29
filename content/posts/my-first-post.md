@@ -1,11 +1,11 @@
 +++ 
 draft = False
-date = 2023-09-28T15:00:56-04:00
+date = 2023-09-17T15:00:56-04:00
 title = "First Post"
 description = ""
 slug = ""
-authors = ["Test"]
-tags = []
+authors = ["Courtney Caldwell"]
+tags = ["Personal","Minimalism"]
 categories = []
 externalLink = ""
 series = []
