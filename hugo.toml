@@ -18,12 +18,12 @@ style = "github-dark"
   info = "(Currently) Independent Researcher and Software Engineer"
   description = "Courtney Caldwell's personal website/blog!"
   keywords = "blog,developer,personal,philosophy,science,computerscience,compsci"
-  avatarurl = "images/avatar.jpg"
+  avatarurl = "static/images/qrface.jpg"
   #gravatar = "john.doe@example.com"
 
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  # faviconSVG = "static/images/qrface.jpg"
+  favicon_32 = "static/icons8-code-office-xs-32.png"
+  favicon_16 = "static/icons8-code-office-xs-16.png"
 
   since = 2023
 
