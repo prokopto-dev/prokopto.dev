@@ -1,5 +1,5 @@
 baseurl = "http://prokopto.dev"
-title = "Courtney C."
+title = "Courtney Caldwell"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -14,10 +14,10 @@ disqusShortname = "yourdiscussshortname"
 style = "github-dark"
 
 [params]
-  author = "John Doe"
-  info = "Full Stack DevOps and Magician"
-  description = "John Doe's personal website"
-  keywords = "blog,developer,personal"
+  author = "Courtney Caldwell"
+  info = "(Currently) Independent Researcher and Software Engineer"
+  description = "Courtney Caldwell's personal website/blog!"
+  keywords = "blog,developer,personal,philosophy,science,computerscience,compsci"
   avatarurl = "images/avatar.jpg"
   #gravatar = "john.doe@example.com"
 
@@ -25,7 +25,7 @@ style = "github-dark"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2019
+  since = 2023
 
   enableTwemoji = true
 
@@ -47,17 +47,17 @@ style = "github-dark"
   name = "Github"
   icon = "fa-brands fa-github fa-2x"
   weight = 1
-  url = "https://github.com/johndoe/"
+  url = "https://github.com/prokopto-dev/"
 [[params.social]]
-  name = "Gitlab"
-  icon = "fa-brands fa-gitlab fa-2x"
+  name = "Mastodon"
+  icon = "fa-brands fa-mastodon fa-2x"
   weight = 2
-  url = "https://gitlab.com/johndoe/"
+  url = "https://mastodon.social/@prokoptodev"
 [[params.social]]
-  name = "Twitter"
-  icon = "fa-brands fa-x-twitter fa-2x"
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
   weight = 3
-  url = "https://twitter.com/johndoe/"
+  url = "https://linkedin.com/courtney-ccc/"
 
 # Menu links
 [[menu.main]]
