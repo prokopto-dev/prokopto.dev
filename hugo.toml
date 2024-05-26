@@ -57,7 +57,7 @@ style = "github-dark"
   name = "LinkedIn"
   icon = "fa-brands fa-linkedin fa-2x"
   weight = 3
-  url = "https://linkedin.com/courtney-ccc/"
+  url = "https://linkedin.com/in/courtney-ccc/"
 
 # Menu links
 [[menu.main]]
