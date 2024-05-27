@@ -68,3 +68,8 @@ style = "github-dark"
   name = "About"
   weight = 2
   url = "about/"
+
+[[menu.main]]
+  name = "QR-Face"
+  weight = 3
+  url = "qr-face/"
