@@ -1,11 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Courtney C.</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Courtney C.</description>
-    <generator>Hugo</generator>
+    <title>Tags on Courtney Caldwell</title>
+    <link>http://prokopto.dev/tags/</link>
+    <description>Recent content in Tags on Courtney Caldwell</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 May 2024 16:35:42 -0400</lastBuildDate>
+    <atom:link href="http://prokopto.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>http://prokopto.dev/tags/blog/</link>
+      <pubDate>Fri, 31 May 2024 16:35:42 -0400</pubDate>
+      <guid>http://prokopto.dev/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>http://prokopto.dev/tags/development/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devwork</title>
+      <link>http://prokopto.dev/tags/devwork/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/devwork/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fabric</title>
+      <link>http://prokopto.dev/tags/fabric/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/fabric/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fabricplus</title>
+      <link>http://prokopto.dev/tags/fabricplus/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/fabricplus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>http://prokopto.dev/tags/javascript/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publishing</title>
+      <link>http://prokopto.dev/tags/publishing/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/publishing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pypi</title>
+      <link>http://prokopto.dev/tags/pypi/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/pypi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://prokopto.dev/tags/python/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>http://prokopto.dev/tags/typescript/</link>
+      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
+      <guid>http://prokopto.dev/tags/typescript/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

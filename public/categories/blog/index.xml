@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Courtney Caldwell</title>
-    <link>http://prokopto.dev/</link>
-    <description>Recent content on Courtney Caldwell</description>
+    <title>Blog on Courtney Caldwell</title>
+    <link>http://prokopto.dev/categories/blog/</link>
+    <description>Recent content in Blog on Courtney Caldwell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 31 May 2024 16:35:42 -0400</lastBuildDate>
-    <atom:link href="http://prokopto.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://prokopto.dev/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>20240531 - Work and Learning</title>
       <link>http://prokopto.dev/posts/20240531/</link>

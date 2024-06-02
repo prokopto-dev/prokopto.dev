@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Courtney Caldwell</title>
-    <link>http://prokopto.dev/</link>
-    <description>Recent content on Courtney Caldwell</description>
+    <title>Blog on Courtney Caldwell</title>
+    <link>http://prokopto.dev/tags/blog/</link>
+    <description>Recent content in Blog on Courtney Caldwell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 31 May 2024 16:35:42 -0400</lastBuildDate>
-    <atom:link href="http://prokopto.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://prokopto.dev/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>20240531 - Work and Learning</title>
       <link>http://prokopto.dev/posts/20240531/</link>
       <pubDate>Fri, 31 May 2024 16:35:42 -0400</pubDate>
       <guid>http://prokopto.dev/posts/20240531/</guid>
       <description>Well, I didn&amp;rsquo;t post anything yesterday At least I didn&amp;rsquo;t post anything on this site.&#xA;I got a lot of stuff fixed here on Wednesday, and got a decent amount of stuff out the door, but I didn&amp;rsquo;t really post too much.&#xA;I did a couple things over on Mastodon.&#xA;But here, nothing.&#xA;But I wasn&amp;rsquo;t doing nothing.&#xA;Docker, Kubernetes, and Networking So one of the things I was doing yesterday was learning all about the different ways you can network stuff in Docker.</description>
-    </item>
-    <item>
-      <title>20240529 - Kanomat and Typescript - Part 1</title>
-      <link>http://prokopto.dev/posts/20240529/</link>
-      <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
-      <guid>http://prokopto.dev/posts/20240529/</guid>
-      <description>Introduction (1445Z) I&amp;rsquo;m not sure quite where to begin. But I&amp;rsquo;ll start here:&#xA;Yesterday I published version 1.0.0 of FabricPlus. It was a couple weeks of work, but I got all the testing and coverage done, autogeneration of docs, and with a few gaps here and there, I&amp;rsquo;m pretty happy with all of it.&#xA;I&amp;rsquo;ve got more ideas for plugins and addons to Fabric, but I&amp;rsquo;m not going to go down that rabbit hole right away.</description>
     </item>
   </channel>
 </rss>

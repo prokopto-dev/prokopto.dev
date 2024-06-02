@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courtney Caldwell</title>
+    <link>http://prokopto.dev/about/</link>
+    <description>Recent content on Courtney Caldwell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://prokopto.dev/about/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
