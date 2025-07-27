@@ -1,9 +1,11 @@
 # About Me
 
-I'm a Computer Scientist, Philosophy Nerd, and Canine Fan.
+I'm Courtney.
 
-I also play (and mostly DM) Dungeons and Dragons, and try to learn about every subject I can get my hands on.
+I am a student and Software Developer working in the Boston area.
 
-I'm always looking for something new to learn, and someone to help by applying that learning.
+I have, historically, worked in the Finance sector, especially for trading firms and associated companies.
 
-Feel free to reach out!
+I have a background in Philosophy, and an interest in the intersection of technology, philosophy, and a life well lived.
+
+I enjoy researching and learning new things; while my ability to get excited can extend to almost any topic, I am most focused on AI (or Statistical Inference Engines and Models) research, and related topics.

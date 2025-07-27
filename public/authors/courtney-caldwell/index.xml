@@ -4,7 +4,7 @@
     <title>Courtney Caldwell</title>
     <link>http://prokopto.dev/authors/courtney-caldwell/</link>
     <description>Recent content on Courtney Caldwell</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 31 May 2024 16:35:42 -0400</lastBuildDate>
     <atom:link href="http://prokopto.dev/authors/courtney-caldwell/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>http://prokopto.dev/posts/20240531/</link>
       <pubDate>Fri, 31 May 2024 16:35:42 -0400</pubDate>
       <guid>http://prokopto.dev/posts/20240531/</guid>
-      <description>Well, I didn&amp;rsquo;t post anything yesterday At least I didn&amp;rsquo;t post anything on this site.&#xA;I got a lot of stuff fixed here on Wednesday, and got a decent amount of stuff out the door, but I didn&amp;rsquo;t really post too much.&#xA;I did a couple things over on Mastodon.&#xA;But here, nothing.&#xA;But I wasn&amp;rsquo;t doing nothing.&#xA;Docker, Kubernetes, and Networking So one of the things I was doing yesterday was learning all about the different ways you can network stuff in Docker.</description>
+      <description>&lt;h1 id=&#34;well-i-didnt-post-anything-yesterday&#34;&gt;&#xA;  Well, I didn&amp;rsquo;t post anything yesterday&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#well-i-didnt-post-anything-yesterday&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;At least I didn&amp;rsquo;t post anything on this site.&lt;/p&gt;&#xA;&lt;p&gt;I got a lot of stuff fixed here on Wednesday, and got a decent amount of stuff out the door, but I didn&amp;rsquo;t really post too much.&lt;/p&gt;&#xA;&lt;p&gt;I did a couple things over on Mastodon.&lt;/p&gt;&#xA;&lt;p&gt;But here, nothing.&lt;/p&gt;&#xA;&lt;p&gt;But I wasn&amp;rsquo;t &lt;em&gt;doing&lt;/em&gt; nothing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;docker-kubernetes-and-networking&#34;&gt;&#xA;  Docker, Kubernetes, and Networking&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#docker-kubernetes-and-networking&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;So one of the things I was doing yesterday was learning all about the different ways you can network stuff in Docker. And how Kubernetes likes to play.&lt;/p&gt;</description>
     </item>
     <item>
       <title>20240529 - Kanomat and Typescript - Part 1</title>
       <link>http://prokopto.dev/posts/20240529/</link>
       <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
       <guid>http://prokopto.dev/posts/20240529/</guid>
-      <description>Introduction (1445Z) I&amp;rsquo;m not sure quite where to begin. But I&amp;rsquo;ll start here:&#xA;Yesterday I published version 1.0.0 of FabricPlus. It was a couple weeks of work, but I got all the testing and coverage done, autogeneration of docs, and with a few gaps here and there, I&amp;rsquo;m pretty happy with all of it.&#xA;I&amp;rsquo;ve got more ideas for plugins and addons to Fabric, but I&amp;rsquo;m not going to go down that rabbit hole right away.</description>
+      <description>&lt;h2 id=&#34;introduction-1445z&#34;&gt;&#xA;  Introduction (1445Z)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction-1445z&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m not sure quite where to begin. But I&amp;rsquo;ll start here:&lt;/p&gt;&#xA;&lt;p&gt;Yesterday I published version &lt;code&gt;1.0.0&lt;/code&gt; of &lt;a href=&#34;https://github.com/prokopto-dev/fabric-plus&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;FabricPlus&lt;/code&gt;&lt;/a&gt;. It was a couple weeks of work, but I got all the testing and coverage done, autogeneration of docs, and with a few gaps here and there, I&amp;rsquo;m pretty happy with all of it.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve got more ideas for plugins and addons to &lt;code&gt;Fabric&lt;/code&gt;, but I&amp;rsquo;m not going to go down that rabbit hole right away. I&amp;rsquo;ll do them, partially because I&amp;rsquo;m sure for some of those I could do it quite quickly. Not sure how much of a value add it would be for the community, but I will use it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
