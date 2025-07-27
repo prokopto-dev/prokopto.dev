@@ -23,7 +23,7 @@ style = "github-dark"
   # faviconSVG = "static/images/qrface.jpg"
   favicon_32 = "/icons8-code-office-xs-32.png"
   favicon_16 = "/icons8-code-office-xs-16.png"
-
+  math=true
   since = 2023
 
   enableTwemoji = true
