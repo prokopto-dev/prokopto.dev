@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Courtney Caldwell</title>
-    <link>http://prokopto.dev/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on Courtney Caldwell</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 31 May 2024 16:35:42 -0400</lastBuildDate>
-    <atom:link href="http://prokopto.dev/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Jul 2025 14:22:57 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Courtney Caldwell</title>
-      <link>http://prokopto.dev/authors/courtney-caldwell/</link>
-      <pubDate>Fri, 31 May 2024 16:35:42 -0400</pubDate>
-      <guid>http://prokopto.dev/authors/courtney-caldwell/</guid>
+      <link>http://localhost:1313/authors/courtney-caldwell/</link>
+      <pubDate>Sun, 27 Jul 2025 14:22:57 -0400</pubDate>
+      <guid>http://localhost:1313/authors/courtney-caldwell/</guid>
       <description></description>
     </item>
   </channel>

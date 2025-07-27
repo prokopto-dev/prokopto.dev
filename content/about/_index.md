@@ -2,7 +2,9 @@
 
 I'm Courtney.
 
-I am a student and Software Developer working in the Boston area.
+I currently work as a Software Developer in the Boston area.
+
+I also am currently studying Computer Science and Artificial Intelligence in the same area.
 
 I have, historically, worked in the Finance sector, especially for trading firms and associated companies.
 

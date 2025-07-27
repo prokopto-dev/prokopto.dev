@@ -2,10 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Courtney Caldwell</title>
-    <link>http://prokopto.dev/series/</link>
+    <link>http://localhost:1313/series/</link>
     <description>Recent content in Series on Courtney Caldwell</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://prokopto.dev/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Jul 2025 14:22:57 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal</title>
+      <link>http://localhost:1313/series/personal/</link>
+      <pubDate>Sun, 27 Jul 2025 14:22:57 -0400</pubDate>
+      <guid>http://localhost:1313/series/personal/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
