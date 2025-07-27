@@ -274,4 +274,3 @@ I want to work to find new solutions (and new problems), and frame the situation
 Will I do more software development in the future? Assuredly.
 
 But I want my future work to be defined, not by an already answered question, but by unanswered ones.
-
