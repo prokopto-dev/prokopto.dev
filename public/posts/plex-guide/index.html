@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Plex, Docker, And A Robust Setup · Courtney Caldwell
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Courtney Caldwell">
+<meta name="description" content="
+  Disclaimer! No Piracy, SVP
+  
+    
+    Link to heading
+  
+
+I, nor this article, do not suggest, nor intend to condone piracy in any form. Copyright holders work hard to provide the world with content worth consuming. They deserve compensation for their work, and that includes for digital representations of their work.
+Don&rsquo;t pirate content.
+What you do with these tools is your business, not mine, but I don&rsquo;t support your collecting pirated content.">
+<meta name="keywords" content="blog,developer,personal,philosophy,science,computerscience,compsci">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Plex, Docker, And A Robust Setup">
+  <meta name="twitter:description" content="Disclaimer! No Piracy, SVP Link to heading I, nor this article, do not suggest, nor intend to condone piracy in any form. Copyright holders work hard to provide the world with content worth consuming. They deserve compensation for their work, and that includes for digital representations of their work.
+Don’t pirate content.
+What you do with these tools is your business, not mine, but I don’t support your collecting pirated content.">
+
+<meta property="og:url" content="http://localhost:1313/posts/plex-guide/">
+  <meta property="og:site_name" content="Courtney Caldwell">
+  <meta property="og:title" content="Plex, Docker, And A Robust Setup">
+  <meta property="og:description" content="Disclaimer! No Piracy, SVP Link to heading I, nor this article, do not suggest, nor intend to condone piracy in any form. Copyright holders work hard to provide the world with content worth consuming. They deserve compensation for their work, and that includes for digital representations of their work.
+Don’t pirate content.
+What you do with these tools is your business, not mine, but I don’t support your collecting pirated content.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-01T11:55:26-04:00">
+    <meta property="article:modified_time" content="2024-06-01T11:55:26-04:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/plex-guide/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/icons8-code-office-xs-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/icons8-code-office-xs-16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Courtney Caldwell
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/qr-face/">QR-Face</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/plex-guide/">
+              Plex, Docker, And A Robust Setup
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-06-01T11:55:26-04:00">
+                June 1, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="disclaimer-no-piracy-svp">
+  Disclaimer! No Piracy, SVP
+  <a class="heading-link" href="#disclaimer-no-piracy-svp">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I, nor this article, do not suggest, nor intend to condone piracy in any form. Copyright holders work hard to provide the world with content worth consuming. They deserve compensation for their work, and that includes for digital representations of their work.</p>
+<p>Don&rsquo;t pirate content.</p>
+<p>What you do with these tools is your business, not mine, but I don&rsquo;t support your collecting pirated content.</p>
+<p>You can use tools to back up existing digital and analogue media into files that can be served by these systems, and that is probably the best use-case for this.</p>
+<p>The fact that you could in theory pirate content, and that many do, is merely a coincidence.</p>
+<p>It is also straight up <em>VERY</em> illegal to charge for access to copyrighted content, regardless of whether it is pirated or not. This guide won&rsquo;t teach you how to legally set up a pay-for-streaming service, because I&rsquo;m not going to teach you how to contract with companies to get licenses to distribute content.</p>
+<p>This is just for private use, for you and your family, within the bounds of your own circle; not for commerical sale.</p>
+<h1 id="media-servers">
+  Media Servers
+  <a class="heading-link" href="#media-servers">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>So, I&rsquo;m not an IT professional by trade.</p>
+<p>Nor am I much of any one particular thing by trade.</p>
+<p>But I am a bit of an obsessive when it comes to having projects I don&rsquo;t need to ever think about again, or that I can pick back up with little-to-no-effort.</p>
+<p>So, in the spirit of that, I have been working hard on my home media server. In this post, which is just a how-to-guide, I&rsquo;ll go over a few topics, and provide as much detail on how to get started on your own (via my own set up process, or how I&rsquo;d do it now that I know all the hiccups).</p>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>When people see, or I mention, my media server setup, some are impressed; others have done it themselves and are merely happy to see someone else in the community doing it.</p>
+<p>It has allowed me to access many of my movies from anywhere, and ensure I can continue to watch them after the DVD-players and BlueRay players that once played them fail or are decomissioned.</p>
+<p>It has provided a slick interface to let me use my Apple TV, iPhone, and other devices to track, monitor, and maintain such services/servers as needed to run these.</p>
+<p>And it&rsquo;s provided a fun project to learn about networking, video transcoding, containerization, and system administration.</p>
+<p>Hopefully, this article will guide those interested towards that process, and you&rsquo;ll become more appreciative of the effort that main-stream streaming services have to go to when providing content to millions of customers at the scale and quality that they do. It&rsquo;s not easy or trivial.</p>
+<p>This guide should help make it at least a little easier to start your own small scale server.</p>
+<h2 id="terminology">
+  Terminology
+  <a class="heading-link" href="#terminology">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I&rsquo;m going to use a few technical terms in this article. They&rsquo;re just shorthand for things that you&rsquo;ll probably be familiar with if you found this article. There are better descriptions than what follows, but this will get you through if you&rsquo;ve never done more than surf the web and stream movies.</p>
+<ul>
+<li><code>host</code> : A &ldquo;computer&rdquo;; something that can run programs, and generally has an operating system on it; it should be able to be interacted with by other <code>hosts</code>, so isn&rsquo;t really about the hardware, though is euphemistically sometimes used that way.</li>
+<li><code>device</code> : The physical hardware of some variety; may not necessarily be able to run programs, so isn&rsquo;t interchangable with <code>host</code>, but is a reference almost exclusively to the hardware.
+<ul>
+<li><code>device (2)</code>: Unfortunately, because of sloppy naming conventions, there is a euphemistic usage of <code>device</code> that references the <strong>representation</strong> of a physical device in the operating system. I apologize on behalf of technologists everywhere.</li>
+</ul>
+</li>
+<li><code>operating system</code>: A series of little programs and services that lets people run more programs and services on <code>hosts</code>/hardware. There&rsquo;s a lot to learn about what makes an operating system an &ldquo;operating system&rdquo;, but &ldquo;Windows&rdquo;, &ldquo;Mac OSX&rdquo;, and &ldquo;Linux&rdquo; are examples of types of operating systems.</li>
+<li><code>server</code> : Sometimes used interchangably with <code>host</code>, but technically a <code>server</code> is a type of program that <em>&ldquo;serves&rdquo;</em> something, like content. In the most literal sense, it <em>serves</em> (or provides) a <em>service</em>.</li>
+<li><code>NAS</code> : Short for &ldquo;Network Attached Storage&rdquo;, it is a <code>server</code> that provides a few programs/services, focused around serving larger amounts of data to other <code>hosts</code>; it can sometimes do more than that, too. Importantly, like <code>server</code>, it is a euphemism for the hardware <code>host</code> as well, at times.</li>
+<li><code>program</code>: A computer application; stuff that runs on an operating system.</li>
+<li><code>service</code> : A type of program, generally not directly interacted with by most users, that helps provide content or a certain behavior.
+<ul>
+<li><code>service (2)</code> : A product provided by some company, that generally involves responding to requests and providing personalized results, content, or behavior based on the types of requests.</li>
+</ul>
+</li>
+<li><code>docker</code> : A program/service, which does some fancy things to make it simple to have a healthy environment to run another program inside of it.</li>
+<li><code>container</code> : The units that <code>docker</code> runs, that &ldquo;<em>contain</em>&rdquo; a program/series of programs; it is the (ideally) healthy environment that you run the programs in.</li>
+<li><code>internet connection</code> : This is going to sound stupid, but I&rsquo;m defining it anyways because of the next term: An &ldquo;internet connection&rdquo; means a connection to the wider &ldquo;world wide web&rdquo;.</li>
+<li><code>network connection</code> : This is less restrictive than the previous term, and means the ability, via a network interface (see next definition) to connect to other <code>hosts</code>.</li>
+<li><code>network interface</code> : Sometimes interchangably used with &ldquo;network card&rdquo;. It technically is strictly a reference to the <em>digital</em> representation of a piece of &ldquo;network hardware&rdquo; that a host communicates through.</li>
+<li><code>network switch</code> : A multiplexing (that is, in this case, a way to provide multiple physical wire connections from a single source) device for network connections. For home users its often a little box that you plug one wire in that has internet, then plug in more wires to other computers/hosts to give them internet from that one place.</li>
+<li><code>RAID</code> : &ldquo;Redundant Array of Inexpensive Disks&rdquo; - one two main methods for using disks together in concert to provide more storage options. Often involves complex methods for moving data between or storing data on multiple disks at once, to speed things up or make it less likely that if a disk fails, you will lose all your data.</li>
+<li><code>JBOD</code> :  &ldquo;Just a Bunch Of Disks&rdquo; - the other method for providing more storage. This is exactly as its described.</li>
+</ul>
+<h2 id="hardware-necessary-equipment">
+  (Hardware) Necessary Equipment
+  <a class="heading-link" href="#hardware-necessary-equipment">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>You&rsquo;ll atleast one thing to get started with the whole setup. You can stop after the first couple sections and be fine, and not require more for the bare minimum. But for a fully automated process of maintaining a library, you&rsquo;ll need to set up a little more.</p>
+<p>This is what I&rsquo;d recommend in general terms; there will be specific suggestions from the time this article was written though in the sections that follow:</p>
+<ul>
+<li>A Host (Computer/Server) that can run <code>docker</code> and <code>plex-media-server</code> (preferrably one you can keep on almost all the time)
+<ul>
+<li>It should have an internet connection, or at least, internal network connection</li>
+<li>See <a href="https://www.plex.tv/media-server-downloads/"  class="external-link" target="_blank" rel="noopener">Plex Media Server Downloads Page</a> for a list, but it includes
+<ul>
+<li>Windows hosts</li>
+<li>Linux hosts</li>
+<li>Mac OSX hosts</li>
+<li>NAS hosts</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="hardware-optional-equipment">
+  (Hardware) Optional Equipment
+  <a class="heading-link" href="#hardware-optional-equipment">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>If you want something that&rsquo;s pretty easy to maintain and expandable, there&rsquo;s a couple things more that you&rsquo;ll want:</p>
+<ul>
+<li>A separate <code>NAS</code> device from the hosting device; especially one that provides a RAID method (JBOD if you&rsquo;re feeling risky)</li>
+<li>A high-speed network switch and ethernet cables to connect the <code>NAS</code> to the host that is running <code>Plex</code></li>
+</ul>
+<p>This way, you can keep growing the storage capacity.</p>
+<h2 id="preamble-before-we-get-started">
+  Preamble Before We Get Started
+  <a class="heading-link" href="#preamble-before-we-get-started">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>There are, at this point, if you have everything above, no more things you <em><strong>NEED</strong></em> to purchase. You&rsquo;ve got what you want, and it&rsquo;ll work just fine. There are places in this guide that paying for this or that product or service will improve the quality, speed, or ease of the setup. You can do this for as little as $200 USD, or spend as much as you wish. You could even out-perform (hypothetically) actual streaming services in performance and quality, with the right setup. I don&rsquo;t such a setup, and I don&rsquo;t think one needs it.</p>
+<p>So at any point if you see me suggest such a thing, know it is merely optional (hopefully I&rsquo;ll mention that, too).</p>
+<h2 id="getting-started">
+  Getting Started
+  <a class="heading-link" href="#getting-started">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2025
+     Courtney Caldwell 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

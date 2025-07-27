@@ -4,7 +4,7 @@
     <title>Typescript on Courtney Caldwell</title>
     <link>http://prokopto.dev/tags/typescript/</link>
     <description>Recent content in Typescript on Courtney Caldwell</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 29 May 2024 14:38:27 +0000</lastBuildDate>
     <atom:link href="http://prokopto.dev/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://prokopto.dev/posts/20240529/</link>
       <pubDate>Wed, 29 May 2024 14:38:27 +0000</pubDate>
       <guid>http://prokopto.dev/posts/20240529/</guid>
-      <description>Introduction (1445Z) I&amp;rsquo;m not sure quite where to begin. But I&amp;rsquo;ll start here:&#xA;Yesterday I published version 1.0.0 of FabricPlus. It was a couple weeks of work, but I got all the testing and coverage done, autogeneration of docs, and with a few gaps here and there, I&amp;rsquo;m pretty happy with all of it.&#xA;I&amp;rsquo;ve got more ideas for plugins and addons to Fabric, but I&amp;rsquo;m not going to go down that rabbit hole right away.</description>
+      <description>&lt;h2 id=&#34;introduction-1445z&#34;&gt;&#xA;  Introduction (1445Z)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction-1445z&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m not sure quite where to begin. But I&amp;rsquo;ll start here:&lt;/p&gt;&#xA;&lt;p&gt;Yesterday I published version &lt;code&gt;1.0.0&lt;/code&gt; of &lt;a href=&#34;https://github.com/prokopto-dev/fabric-plus&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;FabricPlus&lt;/code&gt;&lt;/a&gt;. It was a couple weeks of work, but I got all the testing and coverage done, autogeneration of docs, and with a few gaps here and there, I&amp;rsquo;m pretty happy with all of it.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve got more ideas for plugins and addons to &lt;code&gt;Fabric&lt;/code&gt;, but I&amp;rsquo;m not going to go down that rabbit hole right away. I&amp;rsquo;ll do them, partially because I&amp;rsquo;m sure for some of those I could do it quite quickly. Not sure how much of a value add it would be for the community, but I will use it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

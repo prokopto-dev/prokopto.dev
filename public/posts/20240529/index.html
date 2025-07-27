@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  20240529 - Kanomat and Typescript - Part 1 · Courtney Caldwell
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Courtney Caldwell">
+<meta name="description" content="I begin working on my new project, and reflect on the previous.">
+<meta name="keywords" content="blog,developer,personal,philosophy,science,computerscience,compsci">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="20240529 - Kanomat and Typescript - Part 1">
+  <meta name="twitter:description" content="I begin working on my new project, and reflect on the previous.">
+
+<meta property="og:url" content="http://prokopto.dev/posts/20240529/">
+  <meta property="og:site_name" content="Courtney Caldwell">
+  <meta property="og:title" content="20240529 - Kanomat and Typescript - Part 1">
+  <meta property="og:description" content="I begin working on my new project, and reflect on the previous.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-29T14:38:27+00:00">
+    <meta property="article:modified_time" content="2024-05-29T14:38:27+00:00">
+    <meta property="article:tag" content="Publishing">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Pypi">
+    <meta property="article:tag" content="Fabric">
+    <meta property="article:tag" content="Fabricplus">
+    <meta property="article:tag" content="Development">
+
+
+
+
+<link rel="canonical" href="http://prokopto.dev/posts/20240529/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.6445a802b9389c9660e1b07b724dcf5718b1065ed2d71b4eeaf981cc7cc5fc46.css" integrity="sha256-ZEWoArk4nJZg4bB7ck3PVxixBl7S1xtO6vmBzHzF/EY=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/icons8-code-office-xs-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/icons8-code-office-xs-16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://prokopto.dev/">
+      Courtney Caldwell
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/qr-face/">QR-Face</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://prokopto.dev/posts/20240529/">
+              20240529 - Kanomat and Typescript - Part 1
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-05-29T14:38:27Z">
+                May 29, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/courtney-caldwell/">Courtney Caldwell</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/publishing/">Publishing</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/python/">Python</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/pypi/">Pypi</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/fabric/">Fabric</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/fabricplus/">Fabricplus</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/development/">Development</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/devwork/">Devwork</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/javascript/">Javascript</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/typescript/">Typescript</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="introduction-1445z">
+  Introduction (1445Z)
+  <a class="heading-link" href="#introduction-1445z">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I&rsquo;m not sure quite where to begin. But I&rsquo;ll start here:</p>
+<p>Yesterday I published version <code>1.0.0</code> of <a href="https://github.com/prokopto-dev/fabric-plus"  class="external-link" target="_blank" rel="noopener"><code>FabricPlus</code></a>. It was a couple weeks of work, but I got all the testing and coverage done, autogeneration of docs, and with a few gaps here and there, I&rsquo;m pretty happy with all of it.</p>
+<p>I&rsquo;ve got more ideas for plugins and addons to <code>Fabric</code>, but I&rsquo;m not going to go down that rabbit hole right away. I&rsquo;ll do them, partially because I&rsquo;m sure for some of those I could do it quite quickly. Not sure how much of a value add it would be for the community, but I will use it.</p>
+<p>So my new project is <code>Kanomat</code>. It&rsquo;s a chess thing.</p>
+<p>Basically, I&rsquo;ve been looking to learn chess.</p>
+<p>I mean, I <em>know</em> how to play chess. But I want to <em><strong>know</strong></em> how to play chess, as it were.</p>
+<p>And I also want to write about it. On here. Sometimes. Maybe. Further, I want to learn Javascript. Or Typescript. Or whatever. I&rsquo;ve been neglectful of web-tech; Python-based web-tech notwithstanding.</p>
+<p>So here I am, writing my first Typescript project to be able to add in chess boards embedded in my blog.</p>
+<p>I am going to start off by designing the back end logic and what functions etc I&rsquo;ll need. I just want to get the thing displaying at first.</p>
+<p>Then, once I&rsquo;ve figured that out, I&rsquo;ll start figuring out how to pass it arguments to move the pieces around. Not interactively, of course. I mean, I&rsquo;m positive you can; there are plenty of projects out there that do that. But just to be able to define positions etc.</p>
+<p>Then I want to be able to pump in move lists (exported in a bunch of formats) to be able to generate those positions.</p>
+<p>Then I want to be able to do some animated moves on it to display some stuff.</p>
+<p>So I&rsquo;ll write in the next section about how I plan to go about that.</p>
+<h2 id="post-lunch-check-in-1748z">
+  Post-Lunch Check-in (1748Z)
+  <a class="heading-link" href="#post-lunch-check-in-1748z">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>So I&rsquo;ve made some progress; starting to understand some of the structure here.</p>
+<p>I&rsquo;m going to have to focus first on getting the initial render done; this will be using <code>UTF-8</code> characters as the chess pieces. Not ideal, as having images (for different styles) would be ideal, but I&rsquo;m still figuring this out, and getting SOMETHING done today would be nice.</p>
+<p>I&rsquo;m working on implementing web pack, now that I think I&rsquo;ve got the div rendering logic down.</p>
+<p>Obviously, it&rsquo;s not super efficient. Or maybe not obviously, but I need to start somewhere, and so I will.</p>
+<p>I&rsquo;m also learning some of the terminology between all the different web-stack stuff, the subtle differences between <code>TypeScript</code>, <code>React</code> or plain old <code>JavaScript</code>, etc; like the differences between languages and frameworks.</p>
+<p>I mean, I knew that in terms of other languages that are more back-end oriented, but as far as front-end-esque development, its an interesting paradigm. Not necessarily one I love yet, but I am promising myself to figuring it out.</p>
+<h2 id="first-success-1833z">
+  First Success! (1833Z)
+  <a class="heading-link" href="#first-success-1833z">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Welp, we have it!</p>
+<p>Well, a REALLY basic output. Not even close to what I want in the end, but it is definitely a starting point.</p>
+<p><img src="/images/20240529-first-render.png" alt="First render of a chess board"></p>
+<p>I&rsquo;m pretty happy that it got rendered.</p>
+<p>And if I&rsquo;m honest, I&rsquo;m not entirely sure what some of the configuration I needed to change to get there does.</p>
+<p>But that&rsquo;s how I learn; get to a working version, reverse engineer the configuration and code, and explain it back to myself.</p>
+<p>But I basically slammed in as much configuration as I could from the various <code>TypeScript</code>, <code>WebPack</code>, and <code>React</code> tutorials that seemed relevant. It was a little more organized than all that, and I avoided copy-pasting because I wanted at least to type it out to try to parse it as I wrote it.</p>
+<p>But in the end, it worked. Sorta.</p>
+<p>The weird neon effect from the <code>stroke</code> highlighting on the font output is not desirable, but we&rsquo;ll find a better way to handle it.</p>
+<h2 id="taking-a-break-1900z">
+  Taking a break (1900Z)
+  <a class="heading-link" href="#taking-a-break-1900z">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Alrighty, so I&rsquo;ve managed to get that thing done.</p>
+<p>I am going to do some refinement and research tomorrow, and clean things up a bit before moving further.</p>
+<p>Tomorrow I need to:</p>
+<ul>
+<li>Read up on <code>React</code></li>
+<li>Read up on how <code>Webpack</code> and <code>npm</code> etc work together with <code>React</code></li>
+<li>Read up on which dependencies are actually needed</li>
+<li>Clean up the configuration files and make them more accurate</li>
+<li>Read up on how testing works with <code>TypeScript</code> and <code>React</code></li>
+<li>Read up on how to auto-gen documentation for <code>React</code> and <code>Typescript</code></li>
+</ul>
+<p>I want to have this project have a website as well, just like my last one.</p>
+<p>I think in general as long as you document code well, make it clear how to use it or update/fix it, you&rsquo;ve done a half-way decent job.</p>
+<p>And my goal is not necessarily to invent the defacto chess displayer for javascript, but to simply ensure I&rsquo;ve got something solid that I&rsquo;m not ashamed to point at and say &ldquo;I made this&rdquo;. Which is, hoenestly, not a low bar. But it isn&rsquo;t impossibly high.</p>
+<p>Signing off for the day.</p>
+<h3 id="small-side-note-on-this-website">
+  Small Side Note on this website
+  <a class="heading-link" href="#small-side-note-on-this-website">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Pretty happy I got images working on this site. I had not fully understood how to reference them in <code>hugo</code> stuff. But now I get it.</p>
+<p>I am also happy to have started blogging. I&rsquo;ll start adding more stuff regarding code itself going forward.</p>
+<p>I also have the side project planned to update <code>Coder</code> (the theme I&rsquo;m using) to add <code>MathJax</code> to the template for blog posts so I can put maths in here.</p>
+<p>Then I&rsquo;ll further add in my chess thing.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2025
+     Courtney Caldwell 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
